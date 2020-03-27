@@ -9,25 +9,25 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
-import id.ac.fildzah.catalog_furniture.adapters.GridAdapter;
+import id.ac.fildzah.catalog_furniture.adapters.ProductAdapter;
 import id.ac.fildzah.catalog_furniture.models.Catalog;
 
-public class GridActivity extends AppCompatActivity {
+public class ProductActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grid);
+        setContentView(R.layout.activity_product);
 
-        RecyclerView catalogView = findViewById(R.id.rv_catalog);
+        RecyclerView productView = findViewById(R.id.rv_product);
 
         List<Catalog> catalog = new ArrayList<>();
 //        catalog.add(new Catalog(R.drawable.));
 
-        GridAdapter adapter = new GridAdapter(this, catalog);
-        catalogView.setAdapter(adapter);
+        ProductAdapter adapter = new ProductAdapter(this, catalog);
+        productView.setAdapter(adapter);
 
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 1);
-        catalogView.setLayoutManager(layoutManager);
+        productView.setLayoutManager(layoutManager);
     }
 }

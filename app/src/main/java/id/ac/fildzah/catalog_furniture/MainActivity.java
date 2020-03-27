@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handleSeeProduct(View view) {
-        Intent intent = new Intent(this, GridActivity.class);
+        Intent intent = new Intent(this, CategoryActivity.class);
         startActivity(intent);
     }
 }

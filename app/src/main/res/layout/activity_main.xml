@@ -9,14 +9,14 @@
 
     <ImageView
         android:id="@+id/image_background"
-        android:layout_width="429dp"
-        android:layout_height="629dp"
+        android:layout_width="445dp"
+        android:layout_height="665dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/background_welcome" />
+        app:srcCompat="@drawable/welcome_background" />
 
     <Button
         android:id="@+id/btn_welcome"
@@ -24,16 +24,16 @@
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="#CD5C5C"
+        android:background="#D2691E"
         android:onClick="handleSeeProduct"
         android:text="See Product"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/image_background"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.893" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,19 +2,19 @@ package id.ac.fildzah.catalog_furniture.models;
 
 public class Catalog {
 
-    private String pict;
+    private int pict;
     private String name;
 
-    public Catalog(String pict, String name) {
+    public Catalog(int pict, String name) {
         this.pict = pict;
         this.name = name;
     }
 
-    public String getPict() {
+    public int getPict() {
         return pict;
     }
 
-    public void setPict(String pict) {
+    public void setPict(int pict) {
         this.pict = pict;
     }
 

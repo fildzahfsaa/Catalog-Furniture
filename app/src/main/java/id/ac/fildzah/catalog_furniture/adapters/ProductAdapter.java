@@ -17,12 +17,12 @@ import java.util.List;
 import id.ac.fildzah.catalog_furniture.R;
 import id.ac.fildzah.catalog_furniture.models.Catalog;
 
-public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
+public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
 
     private Context context;
     private List<Catalog> items;
 
-    public GridAdapter(Context context, List<Catalog> items) {
+    public ProductAdapter(Context context, List<Catalog> items) {
         this.context = context;
         this.items = items;
     }
