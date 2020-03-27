@@ -7,6 +7,10 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -33,16 +37,24 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        Catalog item = items.get(position);
+        holder.nameText.setText(item.getName());
+        Picasso.get().load(item.getPict()).into(holder.pict);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return (items != null) ? items.size() : 0;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+        ImageView pict;
+        TextView nameText;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            pict = itemView.findViewById(R.id.picture);
+            nameText = itemView.findViewById(R.id.text_name);
         }
     }
 }
