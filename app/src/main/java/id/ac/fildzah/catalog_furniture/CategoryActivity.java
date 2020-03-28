@@ -1,6 +1,7 @@
 package id.ac.fildzah.catalog_furniture;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
+import id.ac.fildzah.catalog_furniture.adapters.CategoryAdapter;
 import id.ac.fildzah.catalog_furniture.models.Catalog;
 
 public class CategoryActivity extends AppCompatActivity {
@@ -27,5 +29,11 @@ public class CategoryActivity extends AppCompatActivity {
         category.add(new Catalog(R.drawable.ranjang3_1, "Ranjang"));
         category.add(new Catalog(R.drawable.rakbuku2_3, "Rak Buku"));
         category.add(new Catalog(R.drawable.bangku1_1, "Bangku"));
+
+        CategoryAdapter adapter = new CategoryAdapter(this, category);
+        categoryView.setAdapter(adapter);
+
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+        categoryView.setLayoutManager(layoutManager);
     }
 }

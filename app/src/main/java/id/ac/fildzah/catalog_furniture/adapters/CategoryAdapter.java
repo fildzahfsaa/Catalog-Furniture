@@ -1,10 +1,12 @@
 package id.ac.fildzah.catalog_furniture.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,6 +16,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import id.ac.fildzah.catalog_furniture.ProductActivity;
 import id.ac.fildzah.catalog_furniture.R;
 import id.ac.fildzah.catalog_furniture.models.Catalog;
 
@@ -53,6 +56,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
             logoImage = itemView.findViewById(R.id.image_logo);
             nameText = itemView.findViewById(R.id.text_name);
         }

@@ -2,15 +2,15 @@ package id.ac.fildzah.catalog_furniture.models;
 
 public class Catalog {
 
-    private int pict;
-    private String name;
+    private static int pict;
+    private static String name;
 
     public Catalog(int pict, String name) {
         this.pict = pict;
         this.name = name;
     }
 
-    public int getPict() {
+    public static int getPict() {
         return pict;
     }
 
@@ -18,7 +18,7 @@ public class Catalog {
         this.pict = pict;
     }
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
