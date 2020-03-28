@@ -22,13 +22,13 @@ public class CategoryActivity extends AppCompatActivity {
         RecyclerView categoryView = findViewById(R.id.rv_category);
 
         List<Catalog> category = new ArrayList<>();
-        category.add(new Catalog(R.drawable.raktv2_1, "Rak TV"));
-        category.add(new Catalog(R.drawable.lemari7_1, "Lemari"));
-        category.add(new Catalog(R.drawable.kursimakan1_1, "Kursi"));
-        category.add(new Catalog(R.drawable.sofa5_2, "Sofa"));
-        category.add(new Catalog(R.drawable.ranjang3_1, "Ranjang"));
-        category.add(new Catalog(R.drawable.rakbuku2_3, "Rak Buku"));
-        category.add(new Catalog(R.drawable.bangku1_1, "Bangku"));
+        category.add(new Catalog(R.drawable.raktv2_1, "Rak TV", "1"));
+        category.add(new Catalog(R.drawable.lemari7_1, "Lemari", "2"));
+        category.add(new Catalog(R.drawable.kursimakan1_1, "Kursi", "3"));
+        category.add(new Catalog(R.drawable.sofa5_2, "Sofa", "4"));
+        category.add(new Catalog(R.drawable.ranjang3_1, "Ranjang", "5"));
+        category.add(new Catalog(R.drawable.rakbuku2_3, "Rak Buku", "6"));
+        category.add(new Catalog(R.drawable.bangku1_1, "Bangku", "7"));
 
         CategoryAdapter adapter = new CategoryAdapter(this, category);
         categoryView.setAdapter(adapter);

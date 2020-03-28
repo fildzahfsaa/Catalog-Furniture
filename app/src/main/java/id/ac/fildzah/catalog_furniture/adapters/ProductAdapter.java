@@ -16,13 +16,14 @@ import java.util.List;
 
 import id.ac.fildzah.catalog_furniture.R;
 import id.ac.fildzah.catalog_furniture.models.Catalog;
+import id.ac.fildzah.catalog_furniture.models.Product;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
 
     private Context context;
-    private List<Catalog> items;
+    private List<Product> items;
 
-    public ProductAdapter(Context context, List<Catalog> items) {
+    public ProductAdapter(Context context, List<Product> items) {
         this.context = context;
         this.items = items;
     }
@@ -37,7 +38,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Catalog item = items.get(position);
+        Product item = items.get(position);
         holder.nameText.setText(item.getName());
         Picasso.get().load(item.getPict()).into(holder.pict);
     }

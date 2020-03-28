@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,7 +15,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import id.ac.fildzah.catalog_furniture.ProductActivity;
+import id.ac.fildzah.catalog_furniture.Product1Activity;
 import id.ac.fildzah.catalog_furniture.R;
 import id.ac.fildzah.catalog_furniture.models.Catalog;
 
@@ -39,10 +38,19 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Catalog item = items.get(position);
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+        final Catalog item = items.get(position);
         holder.nameText.setText(item.getName());
         Picasso.get().load(item.getPict()).into(holder.logoImage);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (items.get(position).getRowID().matches("1")){
+                    Intent gotoactivity = new Intent(context, Product1Activity.class);
+                    context.startActivity(gotoactivity);
+                }
+            }
+        });
     }
 
     @Override

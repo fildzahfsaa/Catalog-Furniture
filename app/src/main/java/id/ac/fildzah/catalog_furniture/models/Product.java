@@ -1,15 +1,13 @@
 package id.ac.fildzah.catalog_furniture.models;
 
-public class Catalog {
+public class Product {
 
     private int pict;
     private String name;
-    private String RowID;
 
-    public Catalog(int pict, String name, String rowID) {
+    public Product(int pict, String name) {
         this.pict = pict;
         this.name = name;
-        this.RowID = rowID;
     }
 
     public int getPict() {
@@ -27,16 +25,4 @@ public class Catalog {
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getRowID() {
-        return RowID;
-    }
-
-    public void setRowID(String rowID) {
-        RowID = rowID;
-    }
-
-
-
-
 }
