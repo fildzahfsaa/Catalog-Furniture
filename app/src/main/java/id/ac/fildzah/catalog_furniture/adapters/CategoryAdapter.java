@@ -16,6 +16,13 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import id.ac.fildzah.catalog_furniture.Product1Activity;
+import id.ac.fildzah.catalog_furniture.Product2Activity;
+import id.ac.fildzah.catalog_furniture.Product3Activity;
+import id.ac.fildzah.catalog_furniture.Product4Activity;
+import id.ac.fildzah.catalog_furniture.Product5Activity;
+import id.ac.fildzah.catalog_furniture.Product6Activity;
+import id.ac.fildzah.catalog_furniture.Product7Activity;
+import id.ac.fildzah.catalog_furniture.Product8Activity;
 import id.ac.fildzah.catalog_furniture.R;
 import id.ac.fildzah.catalog_furniture.models.Catalog;
 
@@ -47,6 +54,27 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
             public void onClick(View v) {
                 if (items.get(position).getRowID().matches("1")){
                     Intent gotoactivity = new Intent(context, Product1Activity.class);
+                    context.startActivity(gotoactivity);
+                } else if (items.get(position).getRowID().matches("2")){
+                    Intent gotoactivity = new Intent(context, Product2Activity.class);
+                    context.startActivity(gotoactivity);
+                } else if (items.get(position).getRowID().matches("3")){
+                    Intent gotoactivity = new Intent(context, Product3Activity.class);
+                    context.startActivity(gotoactivity);
+                } else if (items.get(position).getRowID().matches("4")){
+                    Intent gotoactivity = new Intent(context, Product4Activity.class);
+                    context.startActivity(gotoactivity);
+                } else if (items.get(position).getRowID().matches("5")){
+                    Intent gotoactivity = new Intent(context, Product5Activity.class);
+                    context.startActivity(gotoactivity);
+                } else if (items.get(position).getRowID().matches("6")){
+                    Intent gotoactivity = new Intent(context, Product6Activity.class);
+                    context.startActivity(gotoactivity);
+                } else if (items.get(position).getRowID().matches("7")){
+                    Intent gotoactivity = new Intent(context, Product7Activity.class);
+                    context.startActivity(gotoactivity);
+                } else if (items.get(position).getRowID().matches("8")){
+                    Intent gotoactivity = new Intent(context, Product8Activity.class);
                     context.startActivity(gotoactivity);
                 }
             }

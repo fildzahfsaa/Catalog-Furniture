@@ -4,10 +4,17 @@ public class Product {
 
     private int pict;
     private String name;
+    private String kode;
+    private String warna;
+    private String harga;
+    private String dimensi;
 
-    public Product(int pict, String name) {
+    public Product(int pict, String name, String kode, String warna, String harga) {
         this.pict = pict;
         this.name = name;
+        this.kode = kode;
+        this.warna = warna;
+        this.harga = harga;
     }
 
     public int getPict() {
@@ -25,4 +32,30 @@ public class Product {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getKode() {
+        return kode;
+    }
+
+    public void setKode(String kode) {
+        this.kode = kode;
+    }
+
+    public String getWarna() {
+        return warna;
+    }
+
+    public void setWarna(String warna) {
+        this.warna = warna;
+    }
+
+    public String getHarga() {
+        return harga;
+    }
+
+    public void setHarga(String harga) {
+        this.harga = harga;
+    }
+
+
 }

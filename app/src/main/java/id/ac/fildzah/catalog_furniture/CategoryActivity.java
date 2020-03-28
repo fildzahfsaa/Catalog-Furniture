@@ -29,6 +29,7 @@ public class CategoryActivity extends AppCompatActivity {
         category.add(new Catalog(R.drawable.ranjang3_1, "Ranjang", "5"));
         category.add(new Catalog(R.drawable.rakbuku2_3, "Rak Buku", "6"));
         category.add(new Catalog(R.drawable.bangku1_1, "Bangku", "7"));
+        category.add(new Catalog(R.drawable.meja4_2, "Meja", "8" ));
 
         CategoryAdapter adapter = new CategoryAdapter(this, category);
         categoryView.setAdapter(adapter);
