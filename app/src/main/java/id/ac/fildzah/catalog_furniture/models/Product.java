@@ -2,12 +2,11 @@ package id.ac.fildzah.catalog_furniture.models;
 
 public class Product {
 
-    private int pict;
-    private String name;
-    private String kode;
-    private String warna;
-    private String harga;
-    private String dimensi;
+    private static int pict;
+    private static String name;
+    private static String kode;
+    private static String warna;
+    private static String harga;
 
     public Product(int pict, String name, String kode, String warna, String harga) {
         this.pict = pict;
@@ -17,7 +16,11 @@ public class Product {
         this.harga = harga;
     }
 
-    public int getPict() {
+    public Product() {
+
+    }
+
+    public static int getPict() {
         return pict;
     }
 
@@ -25,7 +28,7 @@ public class Product {
         this.pict = pict;
     }
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
@@ -33,7 +36,7 @@ public class Product {
         this.name = name;
     }
 
-    public String getKode() {
+    public static String getKode() {
         return kode;
     }
 
@@ -41,7 +44,7 @@ public class Product {
         this.kode = kode;
     }
 
-    public String getWarna() {
+    public static String getWarna() {
         return warna;
     }
 
@@ -49,7 +52,7 @@ public class Product {
         this.warna = warna;
     }
 
-    public String getHarga() {
+    public static String getHarga() {
         return harga;
     }
 

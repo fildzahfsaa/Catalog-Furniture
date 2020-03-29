@@ -14,9 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void handleSee(View view) {
-    }
-
     public void handleSeeProduct(View view) {
         Intent intent = new Intent(this, CategoryActivity.class);
         startActivity(intent);
