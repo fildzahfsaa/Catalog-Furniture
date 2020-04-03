@@ -1,11 +1,9 @@
 package id.ac.fildzah.catalog_furniture.adapters;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,10 +12,8 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import id.ac.fildzah.catalog_furniture.DetailActivity;
 import id.ac.fildzah.catalog_furniture.R;
 import id.ac.fildzah.catalog_furniture.models.Catalog;
 import id.ac.fildzah.catalog_furniture.models.Product;
@@ -58,6 +54,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
             pict = itemView.findViewById(R.id.picture);
             nameText = itemView.findViewById(R.id.text_name);
         }
