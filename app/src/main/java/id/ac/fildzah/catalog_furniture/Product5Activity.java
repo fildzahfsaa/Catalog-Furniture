@@ -26,9 +26,6 @@ public class Product5Activity extends AppCompatActivity {
         product.add(new Product(R.drawable.ranjang1_3, "Patron", "PATBD 120", "Yellow Oak", "Rp 1.329.300"));
         product.add(new Product(R.drawable.ranjang2_2, "Patron", "PATBD 160", "Yellow Oak", "Rp 1.819.300"));
         product.add(new Product(R.drawable.ranjang3_1, "Roma", "ROBD 120", "Brown Walnut", "Rp 1.505.000"));
-        product.add(new Product(R.drawable.ranjang3_2, "Roma", "ROBD 120", "Sonoma Oak", "Rp 1.505.000"));
-        product.add(new Product(R.drawable.ranjang4_1, "Volta", "VOBD 120", "Brown Walnut", "Rp 1.259.300"));
-        product.add(new Product(R.drawable.ranjang5_1, "Volta", "VOBD 160", "Sonoma Oak", "Rp 2.115.000"));
 
 
         ProductAdapter adapter = new ProductAdapter(this, product);

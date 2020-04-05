@@ -24,11 +24,7 @@ public class Product4Activity extends AppCompatActivity {
         List<Product> product = new ArrayList<>();
         product.add(new Product(R.drawable.sofa1_1, "Alextra", "ALEXTRA 3S", "Beige Brown XO", "Rp 5.599.000"));
         product.add(new Product(R.drawable.sofa2_1, "Alextra", "ALEXTRA 1S", "Beige Brown XO", "Rp 3.015.000"));
-        product.add(new Product(R.drawable.sofa3_1, "Alextra", "ALEXTRA 1S L", "Copper Brown CH", "Rp 3.329.100"));
-        product.add(new Product(R.drawable.sofa4_1, "Alextra", "ALEXTRA 3S L", "Copper Brown CH", "Rp 5.309.100"));
-        product.add(new Product(R.drawable.sofa5_1, "Dastan", "DASTAN SBD L", "Black", "Rp 2.699.100"));
         product.add(new Product(R.drawable.sofa5_2, "Dastan", "DASTAN SBD L", "Brown", "Rp 2.699.100"));
-        product.add(new Product(R.drawable.sofa6_1, "Conor", "CONOR SBD L", "Black", "Rp 3.899.000"));
         product.add(new Product(R.drawable.sofa6_2, "Conor", "CONOR SBD L", "Brown", "Rp 3.899.000"));
         product.add(new Product(R.drawable.sofa6_3, "Conor", "CONOR SBD L", "Grey Brown", "Rp 3.899.000"));
         product.add(new Product(R.drawable.sofa8_1, "Keelis", "KEELIS AC", "Grey Brown", "Rp 2.399.000"));
